@@ -1,0 +1,29 @@
+###
+# Main server configuration
+###
+service:
+    name: "logapi"
+    hostname: ""            # Leave hostname empty to use the current hostname.
+
+###
+# TCP connections
+###
+connection:
+    tcp:
+        enabled: true
+        host: 127.0.0.1
+        port: 8080
+        
+###
+# Redis server
+###
+connection:
+    host: 127.0.0.1
+    port: 6379  
+    auth: ""     
+
+###
+# Debug options
+###
+debug:
+    verbose: true # Increases the logging output.
